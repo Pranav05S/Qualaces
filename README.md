@@ -10,3 +10,6 @@ Static site: plain HTML, CSS and vanilla JS. No framework and no bundler, so it 
 
 ## Deploying (Render)
 `render.yaml` is a Blueprint. In Render: **New → Blueprint**, pick this repo, and apply. It publishes the site as a static site (free tier is fine). Add `qualaces.com` under **Settings → Custom Domains** when ready to go live.
+
+## Deploying
+Pushes to `main` publish the site via GitHub Pages (`.github/workflows/pages.yml`). One-time setup: repo **Settings → Pages → Source: GitHub Actions**.
