@@ -1,0 +1,17 @@
+# Render Blueprint: deploys the site as a static site (no server, no build dependencies).
+services:
+  - type: web
+    name: qualaces
+    runtime: static
+    buildCommand: mkdir -p dist && cp -r *.html *.xml *.txt *.webmanifest assets dist/
+    staticPublishPath: dist
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=604800

@@ -7,3 +7,6 @@ Static site: plain HTML, CSS and vanilla JS. No framework and no bundler, so it 
 - Contact form: `CONFIG` at the top of `assets/js/main.js` (EmailJS keys carried over from the old site; set `endpoint` to use your own backend). On failure it falls back to a pre-filled `mailto:`.
 - Interface previews on the QTM page are illustrative; swap in real screenshots when available.
 - Quick find: Ctrl/⌘ + K (or `/`).
+
+## Deploying (Render)
+`render.yaml` is a Blueprint. In Render: **New → Blueprint**, pick this repo, and apply. It publishes the site as a static site (free tier is fine). Add `qualaces.com` under **Settings → Custom Domains** when ready to go live.
