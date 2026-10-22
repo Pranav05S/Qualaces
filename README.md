@@ -1,12 +1,3 @@
-# Qualaces website (redesign)
+# Qualaces
 
-Static site: plain HTML, CSS and vanilla JS. No framework and no bundler, so it hosts on any static host.
-
-- `python3 build.py` regenerates all pages (copy lives in `build.py`; styling in `assets/css/styles.css`; behaviour in `assets/js/main.js`).
-- Preview: `python3 -m http.server` in this folder.
-- Contact form: `CONFIG` at the top of `assets/js/main.js` (EmailJS keys carried over from the old site; set `endpoint` to use your own backend). On failure it falls back to a pre-filled `mailto:`.
-- Interface previews on the QTM page are illustrative; swap in real screenshots when available.
-- Quick find: Ctrl/⌘ + K (or `/`).
-
-## Deploying
-Pushes to `main` publish the site via GitHub Pages (`.github/workflows/pages.yml`). One-time setup: repo **Settings → Pages → Source: GitHub Actions**.
+The website has moved to https://github.com/Pranav05S/QualacesCoreAIFrontend
